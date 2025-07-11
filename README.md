@@ -1,4 +1,4 @@
-<h1 style="text-align: center;">🤖 Automação de Testes de API com PactumJSque</h1>
+<h1 style="text-align: center;">🤖 Automação de Testes de API com PactumJS</h1>
 
 Este projeto utiliza [**PactumJS**](https://pactumjs.github.io/) como framework de automação de testes para APIs REST, escrito em **JavaScript**, com suporte ao **Mocha** como framework de testes e ao **ServeRest** como API simulada.
 
