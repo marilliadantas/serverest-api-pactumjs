@@ -1,0 +1,18 @@
+{
+  "name": "serverest-api---pactum-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./tests"
+  },
+  "author": "Marillia Dantas",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^11.7.1",
+    "pactum": "^3.8.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.0"
+  }
+}
