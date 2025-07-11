@@ -3,7 +3,7 @@ const { spec } = require('pactum')
 it('Should log in successfully', async () => {
 
     await spec() 
-        .post('http://localhost:3000/login')
+        .post(`${process.env.BASE_URL}/login`)
         .withHeaders({
             'Content-Type': 'application/json'
         })
