@@ -1,0 +1,34 @@
+name: API Tests - PactumJS
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+  workflow_dispatch:
+
+jobs:
+  run-pactum-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v3
+
+      - name: 🟢 Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: 📦 Install dependencies
+        run: npm install
+
+      - name: 🧪 Run PactumJS tests
+        run: npm run test
+
+      - name: 💾 Upload test report (if using mochawesome)
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: pactum-report
+          path: mochawesome-report/
