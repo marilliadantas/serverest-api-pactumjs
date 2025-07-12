@@ -27,10 +27,8 @@ jobs:
         run: npm run test
         env:
           BASE_URL: ${{ secrets.BASE_URL }}
-
-      - name: 💾 Upload test report (if using mochawesome)
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: pactum-report
-          path: mochawesome-report/
+          EMAIL: ${{ secrets.EMAIL }}
+          PASSWORD: ${{ secrets.PASSWORD }}
+          EMAIL_FORMAT_INVALID: ${{ secrets.EMAIL_FORMAT_INVALID }}
+          EMAIL_INVALID: ${{ secrets.EMAIL_INVALID }}
+          PASSWORD_INVALID: ${{ secrets.PASSWORD_INVALID }}
