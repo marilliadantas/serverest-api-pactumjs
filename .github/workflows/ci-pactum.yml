@@ -26,7 +26,7 @@ jobs:
       - name: 🧪 Run PactumJS tests
         run: npm run test
         env:
-          API_BASE_URL: ${{ secrets.BASE_URL }}
+          BASE_URL: ${{ secrets.BASE_URL }}
 
       - name: 💾 Upload test report (if using mochawesome)
         if: always()
