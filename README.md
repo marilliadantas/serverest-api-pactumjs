@@ -69,5 +69,3 @@ npm run test
 - 🔗 [Documentação PactumJS](https://pactumjs.github.io/)
 - 🐳 [ServeRest no GitHub](https://github.com/ServeRest/ServeRest)
 - ☕ [Mocha - Framework de Testes](https://mochajs.org/)
-
-Teste
